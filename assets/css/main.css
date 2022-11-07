@@ -950,7 +950,6 @@ footer {
 /* SIGN IN */
 .sign {
     display: flex;
-    position: relative;
 }
 
 .signup {
@@ -1073,17 +1072,36 @@ footer {
     text-align: center;
 }
 
+.ellipse {
+    position: fixed;
+    height: 130vh;
+    width: 65vw;
+    z-index: -1;
+    transform: translateY(-20%);
+    border-bottom-right-radius: 150em;
+    background-color: var(--clr-primary-400);
+}
+
+.ellipse img {
+    position: fixed;
+    top: 62%;
+    left: 50%;
+    height: 40%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
 .sign__left h2,
 .sign__left p,
 .sign__left a {
     font-size: 1.375rem;
     font-weight: var(--fw-bold);
-    color: var(--clr-neutral-400);
+    color: var(--clr-neutral-100);
     margin-block-end: 1rem;
 }
 
 .sign__left a {
-    border: 2px solid var(--clr-neutral-400);
+    border: 2px solid var(--clr-neutral-100);
     border-radius: 32px;
     padding-inline: 2rem;
     padding-block: 0.25rem;
@@ -1099,6 +1117,29 @@ footer {
         max-width: 420px;
         margin-inline: auto;
         padding: 0;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .ellipse {
+        display: none;
+    }
+    .sign__left h2,
+    .sign__left p {
+        color: var(--clr-neutral-900);
+    }
+
+    .sign__left,
+    .sign__right__sign-in {
+        margin: 2rem;
+        padding: 0;
+    }
+
+    .sign {
+        flex-direction: column-reverse;
+        margin-inline: auto;
+        align-items: center;
+        width: 100%;
     }
 }
 

@@ -1106,6 +1106,11 @@ footer {
     padding-inline: 2rem;
     padding-block: 0.25rem;
     background-color: var(--clr-primary-400);
+    transition: all 200ms ease-out;
+}
+
+.sign__left a:hover {
+    filter: brightness(150%);
 }
 
 @media only screen and (max-width: 1000px) {

@@ -1,169 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Fake CRM</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-            rel="stylesheet" />
-        <script
-            src="https://kit.fontawesome.com/656151897e.js"
-            crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="./assets/css/main.css" />
-    </head>
-    <body>
-        <header>
-            <nav class="nav">
-                <h1 class="nav__logo">
-                    <a class="nav__logo__link" href="#"
-                        ><img
-                            class="nav__logo__link--img"
-                            src="./assets/images/Logo.png"
-                            alt="Double Tap"
-                    /></a>
-                </h1>
-                <ul class="nav__list">
-                    <li class="nav__list__item">
-                        <a href="#" class="nav__list__item__link">Home</a>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fake CRM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/656151897e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <h1 class="nav__logo">
+                <a class="nav__logo__link" href="index.html"><img class="nav__logo__link--img" src="./assets/images/Logo.png"
+                        alt="Double Tap" /></a>
+            </h1>
+            <ul class="nav__list">
+                <li class="nav__list__item">
+                    <a href="index.html" class="nav__list__item__link">Home</a>
+                </li>
+                <li class="nav__list__item">
+                    <a href="#" class="nav__list__item__link">Features</a>
+                </li>
+                <li class="nav__list__item">
+                    <a href="#" class="nav__list__item__link">Pricing</a>
+                </li>
+                <li class="nav__list__item">
+                    <a href="how-it-works.html" class="nav__list__item__link">How it Works</a>
+                </li>
+                <li class="nav__list__item">
+                    <a href="#" class="nav__list__item__link">Support</a>
+                </li>
+            </ul>
+            <ul class="nav__btns">
+                <li class="nav__btns__btn">
+                    <a href="sign-in.html" class="nav__btns__btn__link nav__btns__btn__link--white">Sign In</a>
+                </li>
+                <li class="nav__btns__btn">
+                    <a href="sign-up.html" class="nav__btns__btn__link nav__btns__btn__link--primary">Try It Free</a>
+                </li>
+            </ul>
+            <div data-toggle="inactive" class="nav__toggler">
+                <div data-toggle="inactive" class="nav__toggler__line nav__toggler__line--long"></div>
+                <div data-toggle="inactive" class="nav__toggler__line nav__toggler__line--long"></div>
+                <div data-toggle="inactive" class="nav__toggler__line nav__toggler__line--short"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero__left">
+                <h2 class="hero__left__heading">
+                    Focus on <br />Your Business
+                </h2>
+                <h3 class="hero__left__subheading">
+                    Let Us Handle Everything Else
+                </h3>
+                <p class="hero__left__body">
+                    Subscription Billing, powered with revenue retention
+                    tools and a seamless customer experience - without the
+                    technical hurdles.
+                </p>
+                <div class="hero__left__btns">
+                    <a href="sign-up.html" class="hero__left__btns__btn hero__left__btns__btn--primary">Sign Up Free
+                        <i class="fa-solid fa-angles-right"></i></a>
+                    <a href="" class="hero__left__btns__btn hero__left__btns__btn--white"><i
+                            class="fa-solid fa-comment-dots"></i>Chat With
+                        Us</a>
+                </div>
+                <p class="hero__left__sign-in">
+                    Already using <span>Double</span>Tap?
+                    <a href="sign-in.html">Sign In</a>
+                </p>
+                <ul class="hero__left__list">
+                    <li class="hero__left__list__item">
+                        Free 14 day trial
                     </li>
-                    <li class="nav__list__item">
-                        <a href="#" class="nav__list__item__link">Features</a>
+                    <li class="hero__left__list__item">
+                        <div class="oval bg-primary-400"></div>
                     </li>
-                    <li class="nav__list__item">
-                        <a href="#" class="nav__list__item__link">Pricing</a>
+                    <li class="hero__left__list__item">
+                        Manage Customers in Minutes
                     </li>
-                    <li class="nav__list__item">
-                        <a href="#" class="nav__list__item__link"
-                            >How it Works</a
-                        >
+                    <li class="hero__left__list__item">
+                        <div class="oval bg-primary-400"></div>
                     </li>
-                    <li class="nav__list__item">
-                        <a href="#" class="nav__list__item__link">Support</a>
+                    <li class="hero__left__list__item">
+                        Cancel at Anytime
                     </li>
                 </ul>
-                <ul class="nav__btns">
-                    <li class="nav__btns__btn">
-                        <a
-                            href="#"
-                            class="nav__btns__btn__link nav__btns__btn__link--white"
-                            >Sign In</a
-                        >
+            </div>
+            <div class="hero__right">
+                <div class="hero__right__card hero__right__card--primary annoying">
+                    <i class="fa-solid fa-table-columns"></i>
+                    <p class="annoying-text">Client Dashboard</p>
+                </div>
+                <div class="hero__right__card hero__right__card--white">
+                    <i class="fa-regular fa-user"></i>
+                    <p>Employee Profiles</p>
+                </div>
+                <div class="hero__right__card hero__right__card--primary">
+                    <i class="fa-regular fa-calendar-check"></i>
+                    <p>Client Calendars</p>
+                </div>
+                <div class="hero__right__card hero__right__card--primary">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <p class="">Analytics</p>
+                </div>
+                <div class="hero__right__card hero__right__card--white">
+                    <i class="fa-regular fa-comments"></i>
+                    <p>Project Comments</p>
+                </div>
+                <div class="hero__right__card hero__right__card--primary">
+                    <i class="fa-regular fa-folder-open"></i>
+                    <p>Project Folders</p>
+                </div>
+                <div class="hero__right__card hero__right__card--primary">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>Time Tracking</p>
+                </div>
+                <div class="hero__right__card hero__right__card--white">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p>Email</p>
+                </div>
+                <div class="hero__right__card hero__right__card--primary">
+                    <i class="fa-solid fa-bell"></i>
+                    <p>Project Alerts</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="explore">
+            <h2 class="explore__heading">Start to Explore Double Tap</h2>
+            <p class="explore__body">
+                A new and better way for small businesses to manage their
+                customer base, payments and keep track of internal tasks.
+            </p>
+            <div class="explore__cards">
+                <div class="explore__cards__card explore__cards__card--payments">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <p class="text-white">Payments</p>
+                </div>
+                <div class="explore__cards__card explore__cards__card--retain">
+                    <i class="fa-regular fa-user"></i>
+                    <p>Retain</p>
+                </div>
+                <div class="explore__cards__card explore__cards__card--reporting">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <p>Reporting</p>
+                </div>
+                <div class="explore__cards__card explore__cards__card--convert">
+                    <i class="fa-solid fa-right-left"></i>
+                    <p>Convert</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="payments">
+            <div class="payments__left">
+                <img src="./assets/images/credit-card-picture.png" alt="" />
+            </div>
+            <div class="payments__right">
+                <h2 class="payments__right__heading">
+                    Start accepting payments with Ease
+                </h2>
+                <p class="payments__right__body">
+                    Deliver the world of payment options and seamless
+                    checkout experiences, making it easy for your customers
+                    to pay you for your products and services.
+                </p>
+                <ul class="payments__right__list">
+                    <li class="payments__right__list__item">
+                        <p>
+                            Accept credit & debt cards, Paypal, ACH, Apple
+                            pay and more with the flick of a switch
+                        </p>
                     </li>
-                    <li class="nav__btns__btn">
-                        <a
-                            href="#"
-                            class="nav__btns__btn__link nav__btns__btn__link--primary"
-                            >Try It Free</a
-                        >
+                    <li class="payments__right__list__item">
+                        <p>
+                            Process transactions in up to 32 different
+                            countries.
+                        </p>
+                    </li>
+                    <li class="payments__right__list__item">
+                        <p>
+                            Integrate with popular payment gateways like
+                            Stripe, and Braintree
+                        </p>
+                    </li>
+                    <li class="payments__right__list__item">
+                        <p>
+                            Select from a variety of different checkout
+                            options and experiences
+                        </p>
                     </li>
                 </ul>
-                <div data-toggle="inactive" class="nav__toggler">
-                    <div
-                        data-toggle="inactive"
-                        class="nav__toggler__line nav__toggler__line--long"></div>
-                    <div
-                        data-toggle="inactive"
-                        class="nav__toggler__line nav__toggler__line--long"></div>
-                    <div
-                        data-toggle="inactive"
-                        class="nav__toggler__line nav__toggler__line--short"></div>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <section class="hero">
-                <div class="hero__left">
-                    <h2 class="hero__left__heading">
-                        Focus on <br />Your Business
-                    </h2>
-                    <h3 class="hero__left__subheading">
-                        Let Us Handle Everything Else
-                    </h3>
-                    <p class="hero__left__body">
-                        Subscription Billing, powered with revenue retention
-                        tools and a seamless customer experience - without the
-                        technical hurdles.
+                <a href="#" class="payments__right__link">Learn More<i class="fa-solid fa-chevron-right"></i></a>
+                <div class="payments__right__spacer"></div>
+            </div>
+        </section>
+
+        <section class="solutions">
+            <h2 class="solutions__heading">
+                Solutions to fit your Business Needs
+            </h2>
+            <div class="solutions__cards">
+                <div class="solutions__cards__card solutions__cards__card--email-dashboards">
+                    <div class="solutions__cards__card__wrapper">
+                        <i class="solutions__cards__card__wrapper__img fa-solid fa-laptop"></i>
+                    </div>
+                    <h3>Email Dashboards</h3>
+                    <p>
+                        Automate client responses, and keep track of any
+                        communication your team has with a client
                     </p>
-                    <div class="hero__left__btns">
-                        <a
-                            href="#"
-                            class="hero__left__btns__btn hero__left__btns__btn--primary"
-                            >Sign Up Free
-                            <i class="fa-solid fa-angles-right"></i
-                        ></a>
-                        <a
-                            href=""
-                            class="hero__left__btns__btn hero__left__btns__btn--white"
-                            ><i class="fa-solid fa-comment-dots"></i>Chat With
-                            Us</a
-                        >
+                    <a href="#">Learn More<i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+
+                <div class="solutions__cards__card solutions__cards__card--task-management">
+                    <div class="solutions__cards__card__wrapper">
+                        <i class="solutions__cards__card__wrapper__img fa-regular fa-square-check"></i>
                     </div>
-                    <p class="hero__left__sign-in">
-                        Already using <span>Double</span>Tap?
-                        <a href="#">Sign In</a>
+                    <h3>Task Management</h3>
+                    <p>
+                        Automate client responses, and keep track of any
+                        communication your team has with a client
                     </p>
-                    <ul class="hero__left__list">
-                        <li class="hero__left__list__item">
-                            Free 14 day trial
-                        </li>
-                        <li class="hero__left__list__item">
-                            <div class="oval bg-primary-400"></div>
-                        </li>
-                        <li class="hero__left__list__item">
-                            Manage Customers in Minutes
-                        </li>
-                        <li class="hero__left__list__item">
-                            <div class="oval bg-primary-400"></div>
-                        </li>
-                        <li class="hero__left__list__item">
-                            Cancel at Anytime
-                        </li>
-                    </ul>
+                    <a href="#">Learn More<i class="fa-solid fa-chevron-right"></i></a>
                 </div>
-                <div class="hero__right">
-                    <div
-                        class="hero__right__card hero__right__card--primary annoying">
-                        <i class="fa-solid fa-table-columns"></i>
-                        <p class="annoying-text">Client Dashboard</p>
+
+                <div class="solutions__cards__card solutions__cards__card--analytics">
+                    <div class="solutions__cards__card__wrapper">
+                        <i class="solutions__cards__card__wrapper__img fa-solid fa-signal"></i>
                     </div>
-                    <div class="hero__right__card hero__right__card--white">
-                        <i class="fa-regular fa-user"></i>
-                        <p>Employee Profiles</p>
-                    </div>
-                    <div class="hero__right__card hero__right__card--primary">
-                        <i class="fa-regular fa-calendar-check"></i>
-                        <p>Client Calendars</p>
-                    </div>
-                    <div class="hero__right__card hero__right__card--primary">
-                        <i class="fa-solid fa-chart-column"></i>
-                        <p class="">Analytics</p>
-                    </div>
-                    <div class="hero__right__card hero__right__card--white">
-                        <i class="fa-regular fa-comments"></i>
-                        <p>Project Comments</p>
-                    </div>
-                    <div class="hero__right__card hero__right__card--primary">
-                        <i class="fa-regular fa-folder-open"></i>
-                        <p>Project Folders</p>
-                    </div>
-                    <div class="hero__right__card hero__right__card--primary">
-                        <i class="fa-regular fa-clock"></i>
-                        <p>Time Tracking</p>
-                    </div>
-                    <div class="hero__right__card hero__right__card--white">
-                        <i class="fa-regular fa-envelope"></i>
-                        <p>Email</p>
-                    </div>
-                    <div class="hero__right__card hero__right__card--primary">
-                        <i class="fa-solid fa-bell"></i>
-                        <p>Project Alerts</p>
-                    </div>
+                    <h3>Analytics</h3>
+                    <p>
+                        Automate client responses, and keep track of any
+                        communication your team has with a client
+                    </p>
+                    <a href="#">Learn More<i class="fa-solid fa-chevron-right"></i></a>
                 </div>
-            </section>
-        </main>
-    </body>
+
+                <div class="solutions__cards__card solutions__cards__card--project-calendars">
+                    <div class="solutions__cards__card__wrapper">
+                        <i class="solutions__cards__card__wrapper__img fa-regular fa-calendar-days"></i>
+                    </div>
+                    <h3>Project Calendars</h3>
+                    <p>
+                        Automate client responses, and keep track of any
+                        communication your team has with a client
+                    </p>
+                    <a href="#">Learn More<i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2 class="footer__h2">Try Double Tap Today!</h2>
+        <p class="footer__p fw-medium">Let's Get Started</p>
+        <div class="footer__btn-flex">
+            <a class="btn btn-outline-light bg-accent-400 footer__sign-up" href="/sign-up.html">Get Started &raquo;</a>
+            <button class="btn btn-white btn-outline-primary bg-neutral-100 fw-bold"><i
+                    class="fa-solid fa-comment-dots"></i> Chat With Us</button>
+        </div>
+        <div class="perks-flex">
+            <p class="perk fw-light">Free 14 day trial</p>
+            <div class="perk oval bg-neutral-100"></div>
+            <p class="perk fw-light">Manage Customers in Minutes</p>
+            <div class="perk oval bg-neutral-100"></div>
+            <p class="perk fw-light">Cancel at Anytime</p>
+        </div>
+    </footer>
+
+</body>
+
 </html>

@@ -132,6 +132,7 @@ header {
 
 .nav__list__item__link:hover {
     text-decoration: underline;
+    color: var(--clr-neutral-900);
 }
 
 .nav__btns {
@@ -172,6 +173,7 @@ header {
 
 .nav__btns__btn__link--primary:hover {
     filter: brightness(150%);
+    color: var(--clr-neutral-100);
 }
 
 .nav__toggler {
